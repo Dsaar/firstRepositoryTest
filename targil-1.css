@@ -10,6 +10,7 @@
 
 body{
 	background-color: #1E1E2F;
+	overflow: hidden;
 }
 .navbar {
     background-color: #1E1E2F;
