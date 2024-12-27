@@ -186,7 +186,38 @@ h2 {
 
 }
 
+/* Fixing text alignment issue for mobile view */
 
+@media (max-width: 768px) {
+
+	/* Add this to the relevant container in your CSS */
+	.container {
+		display: flex;
+		/* Use flexbox for alignment */
+		flex-direction: column;
+		/* Ensure text remains in a vertical stack */
+		align-items: center;
+		/* Center-align the text horizontally */
+		justify-content: center;
+		/* Optional: Center-align vertically as well */
+		text-align: center;
+		/* Center-align the text content */
+		margin: 0 auto;
+		/* Ensure proper centering on the page */
+		padding: 20px;
+		/* Add some padding for better spacing */
+	}
+
+	/* Example of typography adjustments */
+	.container p {
+		font-size: 16px;
+		/* Adjust font size as needed */
+		line-height: 1.5;
+		/* Improve readability */
+		margin-bottom: 10px;
+		/* Add spacing between paragraphs */
+	}
+}
 
 
 /*#contact {
