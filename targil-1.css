@@ -194,18 +194,20 @@ h2 {
 	.container {
 		display: flex;
 		/* Use flexbox for alignment */
-		flex-direction: column;
-		/* Ensure text remains in a vertical stack */
+		flex-direction: row;
+		/* Place text in a single row */
 		align-items: center;
-		/* Center-align the text horizontally */
+		/* Center-align the text vertically */
 		justify-content: center;
-		/* Optional: Center-align vertically as well */
+		/* Center-align the text horizontally */
 		text-align: center;
 		/* Center-align the text content */
 		margin: 0 auto;
 		/* Ensure proper centering on the page */
 		padding: 20px;
 		/* Add some padding for better spacing */
+		flex-wrap: wrap;
+		/* Ensure text wraps properly on smaller screens */
 	}
 
 	/* Example of typography adjustments */
@@ -214,8 +216,8 @@ h2 {
 		/* Adjust font size as needed */
 		line-height: 1.5;
 		/* Improve readability */
-		margin-bottom: 10px;
-		/* Add spacing between paragraphs */
+		margin: 0 5px;
+		/* Add spacing between words */
 	}
 }
 
